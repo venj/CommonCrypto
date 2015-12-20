@@ -14,6 +14,8 @@
 		258B7EA41C264D2800D0BFED /* iphoneos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphoneos.modulemap; sourceTree = "<group>"; };
 		258B7EA51C264D2800D0BFED /* iphonesimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphonesimulator.modulemap; sourceTree = "<group>"; };
 		258B7EA61C264D2800D0BFED /* macosx.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = macosx.modulemap; sourceTree = "<group>"; };
+		258B7EB81C26783A00D0BFED /* watchos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = watchos.modulemap; sourceTree = "<group>"; };
+		258B7EB91C26783A00D0BFED /* watchsimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = watchsimulator.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,8 @@
 				258B7EA41C264D2800D0BFED /* iphoneos.modulemap */,
 				258B7EA51C264D2800D0BFED /* iphonesimulator.modulemap */,
 				258B7EA61C264D2800D0BFED /* macosx.modulemap */,
+				258B7EB81C26783A00D0BFED /* watchos.modulemap */,
+				258B7EB91C26783A00D0BFED /* watchsimulator.modulemap */,
 				258B7E9C1C264B7100D0BFED /* Info.plist */,
 			);
 			path = CommonCrypto;
@@ -183,12 +187,14 @@
 				"MODULEMAP_FILE[sdk=iphoneos*]" = "$(SRCROOT)/CommonCrypto/iphoneos.modulemap";
 				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "$(SRCROOT)/CommonCrypto/iphonesimulator.modulemap";
 				"MODULEMAP_FILE[sdk=macosx*]" = "$(SRCROOT)/CommonCrypto/macosx.modulemap";
+				"MODULEMAP_FILE[sdk=watchos*]" = "$(SRCROOT)/CommonCrypto/watchos.modulemap";
+				"MODULEMAP_FILE[sdk=watchsimulator*]" = "$(SRCROOT)/CommonCrypto/watchsimulator.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx appletvsimulator appletvos iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "macosx appletvsimulator appletvos iphonesimulator iphoneos watchsimulator watchos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VALID_ARCHS = "i386 x86_64 armv7 armv7s arm64";
+				VALID_ARCHS = "i386 x86_64 armv7 armv7s arm64 armv7k";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -232,10 +238,12 @@
 				"MODULEMAP_FILE[sdk=iphoneos*]" = "$(SRCROOT)/CommonCrypto/iphoneos.modulemap";
 				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "$(SRCROOT)/CommonCrypto/iphonesimulator.modulemap";
 				"MODULEMAP_FILE[sdk=macosx*]" = "$(SRCROOT)/CommonCrypto/macosx.modulemap";
+				"MODULEMAP_FILE[sdk=watchos*]" = "$(SRCROOT)/CommonCrypto/watchos.modulemap";
+				"MODULEMAP_FILE[sdk=watchsimulator*]" = "$(SRCROOT)/CommonCrypto/watchsimulator.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx appletvsimulator appletvos iphonesimulator iphoneos";
-				VALID_ARCHS = "i386 x86_64 armv7 armv7s arm64";
+				SUPPORTED_PLATFORMS = "macosx appletvsimulator appletvos iphonesimulator iphoneos watchsimulator watchos";
+				VALID_ARCHS = "i386 x86_64 armv7 armv7s arm64 armv7k";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
