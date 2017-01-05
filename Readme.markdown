@@ -13,13 +13,13 @@ Usage
 For Carthage (supports OS X, iOS, watchOS and tvOS):
 
 ```
-github "venj/CommonCrypto" ~> 0.2.0
+github "venj/CommonCrypto" ~> 0.3.0
 ```
 
 For Swift Package Manager (supports OS X), add following dependency in your `Package.swift`:
 
 ```swift
 #if os(OSX)
-package.dependencies.append(.Package(url: "https://github.com/venj/CommonCrypto.git", versions: Version(0,2,0) ..< Version(1,0,0)))
+package.dependencies.append(.Package(url: "https://github.com/venj/CommonCrypto.git", versions: Version(0,3,0) ..< Version(1,0,0)))
 #endif
 ```
